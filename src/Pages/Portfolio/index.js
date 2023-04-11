@@ -135,6 +135,46 @@ export default function PortfolioSec() {
             </Button>
           </Grid>
         </Grid>
+
+        <Grid
+          container
+          alignItems={"center"}
+          gap={5}
+          boxShadow={"5px 5px 20px 5px #D6E4E5"}
+          p={3}
+          mt={10}
+          className="animate__animated animate__slideInLeft"
+        >
+          <Grid item lg={5.6}>
+            <Typography variant="h5" sx={{ color: "blue" }}>
+              Project 2
+            </Typography>
+            <Typography
+              sx={{ fontSize: "18px", color: "grey", fontFamily: "a" }}
+            >
+              Geeks provide clean and consistent page designs to help you to
+              create beautiful looking contents. Geek is feature-rich components
+              and beautifully designed pages that help you create the best
+              possible website and web application projects.
+            </Typography>
+            <Button
+              sx={{ mt: 2 }}
+              variant="contained"
+              href="https://astounding-churros-a59969.netlify.app"
+              target="_blank"
+            >
+              Demo
+            </Button>
+          </Grid>
+          <Grid item lg={5.5}>
+            <img
+              style={{ borderRadius: "5px" }}
+              width={"100%"}
+              src="https://www.linkpicture.com/q/youtube_2.jpg"
+              alt=""
+            />
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );
