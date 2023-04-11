@@ -82,7 +82,7 @@ export default function PortfolioSec() {
             <Button
               sx={{ mt: 2 }}
               variant="contained"
-              href="https://taskstyled.netlify.app/"
+              href="https://thunderous-scone-4d7fb1.netlify.app"
               target="_blank"
             >
               Demo
@@ -92,7 +92,7 @@ export default function PortfolioSec() {
             <img
               style={{ borderRadius: "5px" }}
               width={"100%"}
-              src="https://www.linkpicture.com/q/project2.jpg"
+              src="https://www.linkpicture.com/q/projet.jpg"
               alt=""
             />
           </Grid>
@@ -110,7 +110,7 @@ export default function PortfolioSec() {
             <img
               style={{ borderRadius: "5px" }}
               width={"100%"}
-              src="https://www.linkpicture.com/q/project3.jpg"
+              src="https://www.linkpicture.com/q/project_3.jpg"
               alt=""
             />
           </Grid>
@@ -128,7 +128,7 @@ export default function PortfolioSec() {
             <Button
               sx={{ mt: 2 }}
               variant="contained"
-              href="https://loyiha02.netlify.app"
+              href="https://helpful-semolina-972ece.netlify.app/"
               target="_blank"
             >
               Demo
