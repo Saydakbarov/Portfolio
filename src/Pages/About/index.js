@@ -5,7 +5,10 @@ export default function AboutSec() {
   return (
     <>
       <Box sx={{ p: 2 }}>
-        <Box sx={{ mt: 5 }} className="animate__animated animate__fadeInRightBig">
+        <Box
+          sx={{ mt: 5 }}
+          className="animate__animated animate__fadeInRightBig"
+        >
           <Typography
             sx={{
               color: "#173B6C",
@@ -25,7 +28,10 @@ export default function AboutSec() {
           </Typography>
         </Box>
 
-        <Box sx={{ mt: 5,}} className="animate__animated animate__fadeInLeftBig">
+        <Box
+          sx={{ mt: 5 }}
+          className="animate__animated animate__fadeInLeftBig"
+        >
           <Typography
             sx={{
               color: "#173B6C",
@@ -37,19 +43,40 @@ export default function AboutSec() {
           >
             Education
           </Typography>
-          <Typography sx={{ fontSize: "20px", fontFamily: "a", mt: 2, fontWeight:"bold" }}>
+          <Typography
+            sx={{
+              fontSize: "20px",
+              fontFamily: "a",
+              mt: 2,
+              fontWeight: "bold",
+            }}
+          >
             PDP <span style={{ color: "#31EB4F" }}>ACADEMY</span>
           </Typography>
-          <Typography sx={{ fontSize: "20px", fontFamily: "a", mt: 1, fontWeight:"bold" }}>
+          <Typography
+            sx={{
+              fontSize: "20px",
+              fontFamily: "a",
+              mt: 1,
+              fontWeight: "bold",
+            }}
+          >
             Online course: <span style={{ color: "grey" }}> 6 month</span>
           </Typography>
         </Box>
 
-        <Grid container gap={5} mt={4} p={2} boxShadow={"5px 5px 20px 5px #D6E4E5"} className="animate__animated animate__rubberBand">
+        <Grid
+          container
+          gap={5}
+          mt={4}
+          p={2}
+          boxShadow={"5px 5px 20px 5px #D6E4E5"}
+          className="animate__animated animate__rubberBand"
+        >
           <Grid item lg={4}>
             <img
               width={"100%"}
-              src="https://www.linkpicture.com/q/about_2.jpg"
+              src="https://www.linkpicture.com/q/about.jpg"
               alt=""
             />
           </Grid>
@@ -69,7 +96,7 @@ export default function AboutSec() {
                 display: "flex",
                 justifyContent: "space-between",
                 flexWrap: "wrap",
-                mt:2
+                mt: 2,
               }}
             >
               <Box>
@@ -127,12 +154,11 @@ export default function AboutSec() {
                     Frontend Developer
                   </span>
                 </Typography>
-             
               </Box>
-              <Typography sx={{ fontSize: "20px", fontFamily: "a", mt:2 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Typography>
+              <Typography sx={{ fontSize: "20px", fontFamily: "a", mt: 2 }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Typography>
             </Box>
           </Grid>
         </Grid>

@@ -22,7 +22,6 @@ import {
 import { Link, Outlet } from "react-router-dom";
 import DrawerComp from "../../Drawer";
 
-
 export default function Portfolio() {
   // Icons Style
   const IconStyle = {
@@ -37,13 +36,12 @@ export default function Portfolio() {
   };
   // List Item Style
   const listItem = {
-    a:{
+    a: {
       color: "grey",
       "&:hover": {
         color: "#ffff",
       },
-    }
-
+    },
   };
 
   // Drawer and Responsive
@@ -52,8 +50,11 @@ export default function Portfolio() {
 
   return (
     <Box sx={{ display: "flex" }}>
-    {!isMatch && (
-        <Box sx={{ width: "350px", backgroundColor: "#040B14", height:"100vh" }} className="animate__animated animate__fadeInLeft">
+      {!isMatch && (
+        <Box
+          sx={{ width: "350px", backgroundColor: "#040B14", height: "100vh" }}
+          className="animate__animated animate__fadeInLeft"
+        >
           <Box textAlign={"center"}>
             <img
               style={{
@@ -62,7 +63,7 @@ export default function Portfolio() {
                 border: "5px solid grey",
                 marginTop: "20px",
               }}
-              src="https://www.linkpicture.com/q/sidebar_1.jpg"
+              src="https://www.linkpicture.com/q/sidebar.jpg"
               alt=""
             />
             <Typography
@@ -81,25 +82,38 @@ export default function Portfolio() {
               }}
             >
               <IconButton sx={IconStyle}>
-                <a href="https://twitter.com/?lang=ru" target="_blank" rel="noreferrer">
+                <a
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Twitter sx={{ fontSize: "20px" }} />
                 </a>
               </IconButton>
               <IconButton sx={IconStyle}>
                 <a
                   href="https://www.facebook.com/watch/live/?ref=live_delegate"
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <FacebookRounded sx={{ fontSize: "20px" }} />
                 </a>
               </IconButton>
               <IconButton sx={IconStyle}>
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Instagram sx={{ fontSize: "20px" }} />
                 </a>
               </IconButton>
               <IconButton sx={IconStyle}>
-                <a href="https://t.me/saydakbarov_78_72" target="_blank" rel="noreferrer">
+                <a
+                  href="https://t.me/saydakbarov_78_72"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Telegram sx={{ fontSize: "20px" }} />
                 </a>
               </IconButton>
@@ -108,35 +122,35 @@ export default function Portfolio() {
           <List sx={{ mt: 4 }}>
             <ListItem sx={listItem}>
               <ListItemButton>
-                <Link to="" >
-                  <Home sx={{ mr: 1}} /> Home
+                <Link to="">
+                  <Home sx={{ mr: 1 }} /> Home
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem sx={listItem}>
               <ListItemButton>
-              <Link to="about">
+                <Link to="about">
                   <Person sx={{ mr: 1 }} /> About
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem sx={listItem}>
               <ListItemButton>
-              <Link to="skills">
+                <Link to="skills">
                   <LocalLibrary sx={{ mr: 1 }} /> Skills
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem sx={listItem}>
               <ListItemButton>
-              <Link to="portfolio">
+                <Link to="portfolio">
                   <Assessment sx={{ mr: 1 }} /> Portfolio
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem sx={listItem}>
               <ListItemButton>
-              <Link to="contact">
+                <Link to="contact">
                   <ContactMail sx={{ mr: 1 }} /> Contact
                 </Link>
               </ListItemButton>
@@ -153,7 +167,6 @@ export default function Portfolio() {
           </footer>
         </Box>
       )}
-     
 
       <Box
         sx={{
@@ -163,11 +176,10 @@ export default function Portfolio() {
           position: "relative",
         }}
       >
-        <Box sx={{ position: "absolute", right: "3%", top: "2%", }}>
+        <Box sx={{ position: "absolute", right: "3%", top: "2%" }}>
           {isMatch && <DrawerComp />}
         </Box>
-        <Outlet/>
-
+        <Outlet />
       </Box>
     </Box>
   );

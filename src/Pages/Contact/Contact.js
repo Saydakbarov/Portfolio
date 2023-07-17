@@ -31,9 +31,14 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (name.trim() && email.trim() && subject.trim()  && message.trim() !=="" ) {
-        notify()
-        emailjs
+    if (
+      name.trim() &&
+      email.trim() &&
+      subject.trim() &&
+      message.trim() !== ""
+    ) {
+      notify();
+      emailjs
         .sendForm(
           "service_dpzylug",
           "template_67up66x",
@@ -48,23 +53,19 @@ export default function Contact() {
             console.log(error.text);
           }
         );
-        setName( "")
-        setEmail("")
-        setMessage("")
-        setSubject("")
+      setName("");
+      setEmail("");
+      setMessage("");
+      setSubject("");
     }
-
- 
-;
   };
 
   const submit = () => {
-    sendEmail()
-  }
+    sendEmail();
+  };
 
   return (
-    <Box sx={{p:2}}>
-  
+    <Box sx={{ p: 2 }}>
       <Grid container justifyContent={"center"} gap={10} mt={15}>
         <Grid
           item
@@ -102,7 +103,6 @@ export default function Contact() {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-          
 
             <TextField
               type="email"
@@ -149,7 +149,7 @@ export default function Contact() {
           <img
             style={{ borderRadius: "20px" }}
             width={"100%"}
-            src="https://i.ibb.co/Cz9806g/profil.jpg"
+            src="https://www.linkpicture.com/q/profil.jpg"
             alt=""
           />
         </Grid>
